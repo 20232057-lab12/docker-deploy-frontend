@@ -13,7 +13,7 @@ jobs:
         with:  # 修复缩进问题
           context: .
           push: true
-          tags: "${{ secrets.DOCKER_HUB_USERNAME }}/234-deploylab-frontend:latest" # 修复tags格式
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/deploylab-frontend:latest
       
       - name: copy file via ssh password
         uses: appleboy/scp-action@v0.1.7
